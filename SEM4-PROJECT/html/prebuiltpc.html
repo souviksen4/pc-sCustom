@@ -1,30 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/laptop-main.css" />
     <title>PC's Custom</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div class="head">
-            <div class="navbar">
-                <img src="http://placehold.it/60x30" alt="Dummy Image" />
-                <div class="links">
-                    <a href="index.html">HOME</a>
-                    <a href="builtpc.html">BUILT PC</a>
-                    <a href="prebuiltpc.html">PRE BUILT PCs</a>
-                    <a href="laptop.html">LAPTOPs</a>
-                    <a href="cart.html">CART</a>
-                </div>
-            </div>
+      <div class="head">
+        <div class="navbar">
+          <img src="http://placehold.it/60x30" alt="Dummy Image" />
+          <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="builtpc.html">BUILT PC</a>
+            <a href="prebuiltpc.html">PRE BUILT PCs</a>
+            <a href="laptop.html">LAPTOPs</a>
+            <a href="cart.html">CART</a>
+          </div>
         </div>
+      </div>
 
-        
+      <div class="container">
+        PRE-BUILT PCs
+      </div>
 
-        <div class="footer">
-            
+      <div class="footer">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
         </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Payment Options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/builtpc.html">PC Builder</a></li>
+            <li><a href="../html/prebuiltpc.html">Pre-Built PC</a></li>
+            <li><a href="../html/laptop.html">Laptops</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sub-footer">
+        <div class="social-links">
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="../assets/instagram1.png"
+              alt=""
+              width="32px"
+              class="instagram-icon"
+          /></a>
+          <a href="https://www.twitter.com" target="_blank"
+            ><img
+              src="../assets/twitter1.png"
+              alt=""
+              width="30px"
+              class="twitter-icon"
+          /></a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><img
+              src="../assets/facebook1.png"
+              alt=""
+              width="30px"
+              class="facebook-icon"
+          /></a>
+        </div>
+        <div class="copyright">
+          PC's Customs Pvt. Ltd © 2024. All Rights Reserved.
+        </div>
+        <div class="cards">
+          <a href="#"><img src="../assets/visa.png" alt="" width="32px" /></a>
+          <a href="#"><img src="../assets/bank.png" alt="" width="62px" /></a>
+          <a href="#"><img src="../assets/card.png" alt="" width="32px" /></a>
+        </div>
+      </div>
     </div>
-</body>
+
+    <button class="to-top" onclick="scrollToTop()">Top</button>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      window.onscroll = function () {
+        var toTopButton = document.querySelector(".to-top");
+
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          toTopButton.style.display = "block";
+        } else {
+          toTopButton.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
