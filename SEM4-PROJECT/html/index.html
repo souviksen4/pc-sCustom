@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>PC's Custom</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-container">
-        <div class="head">
-            <div class="navbar">
-                <img src="http://placehold.it/60x30" alt="Dummy Image" />
-                <div class="links">
-                    <a href="index.html">HOME</a>
-                    <a href="builtpc.html">BUILT PC</a>
-                    <a href="prebuiltpc.html">PRE BUILT PCs</a>
-                    <a href="laptop.html">LAPTOPs</a>
+      <div class="head">
+        <div class="navbar">
+          <img src="http://placehold.it/60x30" alt="Dummy Image" />
+          <div class="links">
+            <a href="index.html">HOME</a>
+            <a href="builtpc.html">BUILT PC</a>
+            <a href="prebuiltpc.html">PRE BUILT PCs</a>
+            <a href="laptop.html">LAPTOPs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="col-1">
+          <h1>PC Custom's</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, earum?
+          </p>
+        </div>
+        <div class="col-2">
+          <img src="../assets/hero.png" alt="hero-img" width="500em" />
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/builtpc.html">PC Builder</a></li>
+            <li><a href="../html/prebuiltpc.html">Pre-Built PC</a></li>
+            <li><a href="../html/laptop.html">Laptops</a></li>
+          </ul>
+        </div>
+        <!-- <div class="footer-col">
+                <h4>Social Media</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-            </div>
-        </div>
-
-        <div class="hero">
-            <div class="col-1">
-                <h1>PC Custom's</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, earum?</p>
-            </div>
-            <div class="col-2">
-                <img src="../assets/hero.png" alt="hero-img" width="500em"/>
-            </div>
-        </div>
-
-        <div class="footer">
-            
-        </div>
+            </div> -->
+      </div>
     </div>
-</body>
+
+    <button class="to-top" onclick="scrollToTop()">To Top</button>
+
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      window.onscroll = function () {
+        var toTopButton = document.querySelector(".to-top");
+
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          toTopButton.style.display = "block";
+        } else {
+          toTopButton.style.display = "none";
+        }
+      };
+    </script>
+  </body>
 </html>
