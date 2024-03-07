@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid #ff0000; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -12,6 +11,10 @@ a{
     color: black;
 }
 
+/* body {
+    background-color: #f6e9e4;
+} */
+
 /********************************************************************************/
 
 .navbar{
@@ -20,7 +23,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    /* border-bottom: 3px solid grey; */
+    background-color: #000000;
 }
 
 .logo{
@@ -31,6 +34,7 @@ a{
 .links a{
     padding: 0 15px;
     font-size: large;
+    color: #f6e9e4;
 }
 
 .products-container{
