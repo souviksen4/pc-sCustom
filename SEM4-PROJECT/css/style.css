@@ -64,7 +64,7 @@ a {
 .footer {
     display: flex;
     justify-content: space-around;
-    background-color: #000000;
+    background-color: #282828;
     color: #f6e9e4;
     padding: 20px 0;
 }
@@ -109,4 +109,32 @@ a {
 
 .to-top:hover {
     background-color: #b0b0b0;
+}
+
+
+.sub-footer{
+    background-color: #282828;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-footer .copyright{
+    color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub-footer .instagram-icon:hover{
+    content: url(../assets/instagram.png);
+}
+.sub-footer .twitter-icon:hover{
+    content: url(../assets/twitter.png);
+}
+.sub-footer .facebook-icon:hover{
+    content: url(../assets/facebook.png);
 }
